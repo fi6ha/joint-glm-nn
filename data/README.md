@@ -15,7 +15,7 @@ dataset = openml.datasets.get_dataset(41214)
 
 Or download directly from: https://www.openml.org/d/41214
 
-**Option 2 — Kaggle**
+**Option 2: Kaggle**
 
 Search for `freMTPL2` on Kaggle and download the CSV files.
 
