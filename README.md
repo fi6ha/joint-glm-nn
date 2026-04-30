@@ -45,21 +45,21 @@ Download the freMTPL2 dataset and place it in the `data/` folder. See `data/READ
 
 ## Running the Code
 
-**Step 1 — Train all models and generate figures:**
+**Step 1: Train all models and generate figures:**
 ```bash
 python main.py
 ```
 
 This will print results for all five options, save `model_4b.pth`, `final_model_comparison.csv`, and `hybrid_model_results.png`.
 
-**Step 2 — Run SHAP interpretability analysis:**
+**Step 2: Run SHAP interpretability analysis:**
 ```bash
 python shap_analysis.py
 ```
 
 This loads the saved model and generates `shap_frequency.png` and `shap_severity.png`.
 
-**Alternatively — open the notebook:**
+**Alternatively: open the notebook:**
 ```bash
 jupyter notebook results.ipynb
 ```
