@@ -51,7 +51,7 @@ np.random.seed(SEED)
 # ─────────────────────────────────────────────────────────
 
 ALPHA    = 1.0   # frequency loss weight
-BETA     = 2.0   # severity loss weight
+BETA     = 1.0   # severity loss weight
 N_EPOCHS = 100
 LR       = 0.0003
 BATCH    = 512
