@@ -574,7 +574,7 @@ ax5 = fig.add_subplot(gs[1, 2])
 x = decile_cal["freq_decile"]
 ax5.bar(x - 0.2, decile_cal["actual_mean"],    width=0.4, label="Actual",    color="#FFD580", edgecolor="grey")
 ax5.bar(x + 0.2, decile_cal["predicted_mean"], width=0.4, label="Predicted", color="#C7CEEA", edgecolor="grey")
-ax5.set_xlabel("Risk Decile"); ax5.set_ylabel("Mean Claim Amount (£)")
+ax5.set_xlabel("Risk Decile"); ax5.set_ylabel("Mean Claim Amount (€)")
 ax5.set_title(f"Calibration by Risk Decile\n(ratio = {opt4b_cal_ratio:.3f})", fontsize=10)
 ax5.legend(fontsize=8); ax5.grid(True, axis="y", ls="--", lw=0.4)
 
@@ -586,8 +586,8 @@ ax6.scatter(
     alpha=0.3, s=8, color="mediumpurple"
 )
 ax6.plot([0, cap], [0, cap], "r--", lw=1.5, label="Perfect")
-ax6.set_xlabel("Actual Severity (£)"); ax6.set_ylabel("Predicted Severity (£)")
-ax6.set_title("Option 4b: Severity Actual vs Predicted\n(claim policies, capped £30k)", fontsize=10)
+ax6.set_xlabel("Actual Severity (€)"); ax6.set_ylabel("Predicted Severity (€)")
+ax6.set_title("Option 4b: Severity Actual vs Predicted\n(claim policies, capped €30k)", fontsize=10)
 ax6.legend(fontsize=8); ax6.grid(True, ls="--", lw=0.4)
 
 ax7 = fig.add_subplot(gs[2, 1])
@@ -598,7 +598,7 @@ bars7 = ax7.bar(model_names, sev_maes, color=bar_colors, edgecolor="grey", lw=0.
 for bar, v in zip(bars7, sev_maes):
     ax7.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 10,
              f"{v:.0f}", ha="center", va="bottom", fontsize=8)
-ax7.set_ylabel("Severity MAE (£)")
+ax7.set_ylabel("Severity MAE (€)")
 ax7.set_title("Severity MAE Across All Models", fontsize=10)
 ax7.grid(True, axis="y", ls="--", lw=0.4)
 
